@@ -3061,7 +3061,12 @@ public class Registration extends Registration_Base {
     }
 
     final public Collection<AcademicServiceRequest> getNewAcademicServiceRequests() {
-        return (Collection<AcademicServiceRequest>) getAcademicServiceRequests(AcademicServiceRequestSituationType.NEW);
+    	try {
+    		return (Collection<AcademicServiceRequest>) getAcademicServiceRequests(AcademicServiceRequestSituationType.NEW);
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new RuntimeException(e);
+		}
     }
 
     final public Collection<AcademicServiceRequest> getProcessingAcademicServiceRequests() {

@@ -58,17 +58,20 @@ public class DegreeType extends DegreeType_Base implements Comparable<DegreeType
 
     // TODO Provide a proper implementation for this
     public final boolean qualifiesForGraduateTitle() {
-        throw new UnsupportedOperationException("NYI");
+        //throw new UnsupportedOperationException("NYI");
+    	return true;
     }
 
     // TODO Provide a proper implementation for this
     public final boolean hasSeniorEligibility(Registration registration, ExecutionYear executionYear) {
-        throw new UnsupportedOperationException("NYI");
+        //throw new UnsupportedOperationException("NYI");
+    	return false;
     }
 
     // TODO Provide a proper implementation for this
     final public String getGraduateTitle(final CycleType cycleType, final Locale locale) {
-        throw new UnsupportedOperationException("NYI");
+        //throw new UnsupportedOperationException("NYI");
+        return "licenciado";
     }
 
     // TODO Provide a proper implementation for this

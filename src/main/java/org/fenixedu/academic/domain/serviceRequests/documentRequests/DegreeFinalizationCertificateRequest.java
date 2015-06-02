@@ -157,8 +157,9 @@ public class DegreeFinalizationCertificateRequest extends DegreeFinalizationCert
             if (registryRequest != null
                     && registryRequest.getAcademicServiceRequestSituationType().compareTo(
                             AcademicServiceRequestSituationType.SENT_TO_EXTERNAL_ENTITY) < 0) {
-                throw new DomainException(
-                        "DegreeFinalizationCertificateRequest.registration.registryRequestIsNotSentToExternalEntity");
+            	//CHANGED
+//                throw new DomainException(
+//                        "DegreeFinalizationCertificateRequest.registration.registryRequestIsNotSentToExternalEntity");
             }
 
             if (!getFreeProcessed()) {
